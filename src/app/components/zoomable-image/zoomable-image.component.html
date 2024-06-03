@@ -1,0 +1,15 @@
+<div #zoomContainer class="zoom-container"
+     (mousedown)="startDrag($event)"
+     (mousemove)="moved($event)"
+>
+  <div class="zoom-target" #zoomTarget
+    [style.transform]="'translate(' + targetTranslation.x + 'px, ' + targetTranslation.y + 'px) scale(' + scale +')'"
+  >
+    <img
+      #img
+      style="height: 90vh; margin: 0 auto"
+      src="https://th.bing.com/th/id/OIP.f_3LtYMkE5IdKo2Nwp0nxAHaOW?rs=1&pid=ImgDetMain"
+      alt=""
+    >
+  </div>
+</div>

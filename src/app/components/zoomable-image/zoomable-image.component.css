@@ -1,0 +1,23 @@
+:host{
+  background-color: rgba(136, 136, 136, 0.25);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-container {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  /*overflow: hidden;*/
+  margin: auto;
+  border: 5px solid red;
+}
+
+.zoom-target {
+  height: 90vh;
+  transition: transform 0.05s ease-out;
+  transform-origin: 0 0;
+}
